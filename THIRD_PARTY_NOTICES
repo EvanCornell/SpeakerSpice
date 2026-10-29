@@ -1,0 +1,57 @@
+Third-party notices
+===================
+
+SpeakerSpice is MIT licensed (see LICENSE). It runs and bundles the
+following third-party software, which keeps its own licence.
+
+
+ngspice (simulation engine)
+---------------------------
+SpeakerSpice simulates with ngspice, compiled to WebAssembly and distributed
+in the eecircuit-engine package. It is used unmodified.
+
+  ngspice        Modified BSD licence
+                 https://ngspice.sourceforge.io/
+                 Source: https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/
+
+  The ngspice build includes components under the GNU Lesser General Public
+  License, version 2 or later:
+
+  KLU            sparse matrix solver (SuiteSparse), LGPL-2.1-or-later
+                 https://github.com/DrTimothyAldenDavis/SuiteSparse
+  numparam       ngspice parameter preprocessor, LGPL-2.0-or-later
+                 Included in the ngspice source tree above.
+
+  These libraries are used unmodified. Their complete source code is
+  available at the links above, and you may replace the engine with your
+  own build of the same sources.
+
+  eecircuit-engine   MIT licence, Copyright (c) 2024 EElab.dev
+                     https://github.com/eelab-dev/EEcircuit-engine
+                     (npm: eecircuit-engine)
+
+
+elkjs (circuit diagram layout)
+------------------------------
+  elkjs          Eclipse Public License 1.0
+                 https://github.com/kieler/elkjs
+  Used unmodified, through netlistsvg, to lay out the circuit-diagram export.
+  Its source is available at the link above.
+
+
+Fonts
+-----
+  Geist, Geist Mono   SIL Open Font License 1.1
+                      https://github.com/vercel/geist-font
+  Cascadia Mono       SIL Open Font License 1.1
+                      https://github.com/microsoft/cascadia-code
+  Their licence texts are in src/assets/fonts/.
+
+
+npm dependencies
+----------------
+Every other dependency is installed from npm under a permissive licence
+(MIT, ISC, BSD, Apache-2.0 and similar), including React, React Flow,
+Recharts, Zustand, math.js (Apache-2.0), isomorphic-git, netlistsvg,
+html-to-image and buffer. Each package's licence is in its directory under
+node_modules/ after `npm install`.

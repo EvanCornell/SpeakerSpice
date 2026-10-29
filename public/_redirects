@@ -1,0 +1,4 @@
+# Netlify / Cloudflare Pages: serve the SPA for client-side routes.
+# `/panel?id=…` is a real path, not a hash, so a popped-out panel 404s on a
+# static host without this.
+/*  /index.html  200
